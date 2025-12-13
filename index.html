@@ -28,6 +28,7 @@
         <img
           src="/ecommerce-product-page-main/images/logo.svg"
           alt="Sneakers Logo"
+          class="logo"
         />
         <nav>
           <ul class="links">
@@ -40,14 +41,29 @@
         </nav>
 
         <div class="cart-image">
-          <img
-            src="/ecommerce-product-page-main/images/icon-cart.svg"
-            alt="cart-logo"
-          />
+          <div class="cart">
+            <img
+              src="/ecommerce-product-page-main/images/icon-cart.svg"
+              alt="cart-logo"
+              class="cart-logo"
+            />
+            <div class="cart-dialog">
+              <div class="dialog-head">
+                <p class="dialog-name">Cart</p>
+                <p class="close">x</p>
+              </div>
+              <div class="content">Your cart is empty</div>
+              <p class="checkout">CheckOut</p>
+            </div>
+          </div>
           <img
             src="/ecommerce-product-page-main/images/image-avatar.png"
             alt="Avatar of Who Is Signed In"
+            class="avatar"
           />
+          <div class="log-out hidden">
+            <p>Log Out &rArr;</p>
+          </div>
         </div>
       </header>
 
@@ -82,7 +98,7 @@
         </div>
         <div class="product-description">
           <p class="company-name">Sneaker Company</p>
-          <p class="item-name">Fall Limited Edition Sneakers</p>
+          <h1 class="item-name">Fall Limited Edition Sneakers</h1>
           <p class="item-description">
             These low-profile sneakers are your perfect casual wear companion.
             Featuring a durable rubber outer sole, they’ll withstand everything
@@ -97,17 +113,26 @@
             <p class="undiscounted-price">$250.00</p>
           </div>
           <div class="amount-cart">
-            <div class="amount">0</div>
+            <div class="amount">
+              <p class="minus">-</p>
+              <p class="quantity">0</p>
+              <p class="plus">+</p>
+            </div>
+            <button class="add-to-cart">
+              <img
+                src="/ecommerce-product-page-main/images/icon-cart.svg"
+                alt="cart-logo"
+              />Add to cart
+            </button>
           </div>
-          <button class="add-to-cart">Add to cart</button>
         </div>
       </section>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">JUDEXIFY</a>.
-      </div>
     </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">JUDEXIFY</a>.
+    </div>
   </body>
 </html>
