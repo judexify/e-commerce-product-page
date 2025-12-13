@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <main>
+      <header class="main-page-header">
+        <img
+          src="/ecommerce-product-page-main/images/logo.svg"
+          alt="Sneakers Logo"
+        />
+        <nav>
+          <ul class="links">
+            <li class="link"><a href="#">Collections</a></li>
+            <li class="link"><a href="#">Men</a></li>
+            <li class="link"><a href="#">Women</a></li>
+            <li class="link"><a href="#">About</a></li>
+            <li class="link"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="cart-image">
+          <img
+            src="/ecommerce-product-page-main/images/icon-cart.svg"
+            alt="cart-logo"
+          />
+          <img
+            src="/ecommerce-product-page-main/images/image-avatar.png"
+            alt="Avatar of Who Is Signed In"
+          />
+        </div>
+      </header>
+
+      <section class="product-grid">
+        <div class="product-images">
+          <div class="main-image">
+            <img
+              src="/ecommerce-product-page-main/images/image-product-1.jpg"
+              alt="Fall limited Edition sneakers Image One"
+              data-thumbnail="one"
+            />
+          </div>
+          <div class="thumbnail-images">
+            <img
+              src="/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg"
+              alt="thumbnail-images one"
+              data-thumbnail="one"
+            /><img
+              src="/ecommerce-product-page-main/images/image-product-2-thumbnail.jpg"
+              alt="thumbnail-images two"
+              data-thumbnail="two"
+            /><img
+              src="/ecommerce-product-page-main/images/image-product-3-thumbnail.jpg"
+              alt="thumbnail-images three"
+              data-thumbnail="three"
+            /><img
+              src="/ecommerce-product-page-main/images/image-product-4-thumbnail.jpg"
+              alt="thumbnail-images four"
+              data-thumbnail="four"
+            />
+          </div>
+        </div>
+        <div class="product-description">
+          <p class="company-name">Sneaker Company</p>
+          <p class="item-name">Fall Limited Edition Sneakers</p>
+          <p class="item-description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="item-price">
+            <div class="discount-price">
+              <span class="discounted-price">$125.00</span>
+
+              <span class="discounted-percent">50%</span>
+            </div>
+            <p class="undiscounted-price">$250.00</p>
+          </div>
+          <div class="amount-cart">
+            <div class="amount">0</div>
+          </div>
+          <button class="add-to-cart">Add to cart</button>
+        </div>
+      </section>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">JUDEXIFY</a>.
+      </div>
+    </main>
+  </body>
+</html>
