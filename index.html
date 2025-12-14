@@ -12,7 +12,12 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
     <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +30,9 @@
   <body>
     <main>
       <header class="main-page-header">
+        <span class="material-symbols-outlined menu" aria-label="open sidebar">
+          menu
+        </span>
         <img
           src="/ecommerce-product-page-main/images/logo.svg"
           alt="Sneakers Logo"
@@ -32,6 +40,9 @@
         />
         <nav>
           <ul class="links">
+            <li class="link">
+              <span class="material-symbols-outlined close"> close </span>
+            </li>
             <li class="link"><a href="#">Collections</a></li>
             <li class="link"><a href="#">Men</a></li>
             <li class="link"><a href="#">Women</a></li>
@@ -40,6 +51,8 @@
           </ul>
         </nav>
 
+        <div id="overlay" aria-hidden="true"></div>
+
         <div class="cart-image">
           <div class="cart">
             <img
@@ -47,7 +60,7 @@
               alt="cart-logo"
               class="cart-logo"
             />
-            <div class="cart-dialog">
+            <div class="cart-dialog hidden">
               <div class="dialog-head">
                 <p class="dialog-name">Cart</p>
                 <p class="close">x</p>
@@ -68,6 +81,36 @@
       </header>
 
       <section class="product-grid">
+        <div class="mobile-view">
+          <img
+            src="/ecommerce-product-page-main/images/image-product-1.jpg"
+            alt="Fall limited Edition sneakers Image One"
+            data-thumbnail="mobile-one"
+            class="slide slide-1"
+            style="transform: translateX(0%)"
+          />
+          <img
+            src="/ecommerce-product-page-main/images/image-product-2.jpg"
+            alt="Fall limited Edition sneakers Image two"
+            data-thumbnail="mobile-two"
+            class="slide slide-2"
+            style="transform: translateX(100%)"
+          /><img
+            src="/ecommerce-product-page-main/images/image-product-3.jpg"
+            alt="Fall limited Edition sneakers Image three"
+            data-thumbnail="mobile-three"
+            class="slide slide-3"
+            style="transform: translateX(200%)"
+          /><img
+            src="/ecommerce-product-page-main/images/image-product-4.jpg"
+            alt="Fall limited Edition sneakers Image four"
+            data-thumbnail="mobile-four"
+            class="slide slide-4"
+            style="transform: translateX(300%)"
+          />
+        </div>
+        <button class="slider__btn slider__btn--left"><</button>
+        <button class="slider__btn slider__btn--right">></button>
         <div class="product-images">
           <div class="main-image">
             <img
@@ -107,7 +150,6 @@
           <div class="item-price">
             <div class="discount-price">
               <span class="discounted-price">$125.00</span>
-
               <span class="discounted-percent">50%</span>
             </div>
             <p class="undiscounted-price">$250.00</p>
