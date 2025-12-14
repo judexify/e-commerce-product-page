@@ -83,7 +83,6 @@
     margin-right: auto;
   }
 
-  /* Hide desktop navigation links by default */
   .main-page-header > nav {
     position: fixed;
     top: 0;
@@ -276,7 +275,7 @@
   }
 
   .slider__btn {
-    top: 17.5rem; /* Half of mobile-view height (35rem / 2) */
+    top: 17.5rem;
     height: 4rem;
     width: 4rem;
     font-size: 2rem;
