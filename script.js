@@ -151,7 +151,7 @@ const renderCart = function () {
   if (contentOfCart) {
     contentCart.textContent = "";
     const htmlString = `
-    <img src="/ecommerce-product-page-main/images/image-product-${
+    <img src="/images/image-product-${
       itemToCart.productnumber
     }-thumbnail.jpg" />
     <div class="cart-flex">
@@ -160,7 +160,7 @@ const renderCart = function () {
       productPrice * currentNumberDisplayed
     }.00</span></p>
     </div>
-    <img src="/ecommerce-product-page-main/images/icon-delete.svg" class="delete-cart" />
+    <img src="/images/icon-delete.svg" class="delete-cart" />
     `;
     contentCart.innerHTML = htmlString;
   }
@@ -201,29 +201,29 @@ function forModalDisplay() {
   <p class="close-modal">X</p>
   <div class="main-image">
             <img
-              src="/ecommerce-product-page-main/images/image-product-1.jpg"
+              src="/images/image-product-1.jpg"
               alt="Fall limited Edition sneakers Image One"
               data-thumbnail="one"
             />
           </div>
           <div class="thumbnail-images">
             <img
-              src="/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg"
+              src="/images/image-product-1-thumbnail.jpg"
               alt="thumbnail-images one"
               data-thumbnail="1"
               class="small"
             /><img
-              src="/ecommerce-product-page-main/images/image-product-2-thumbnail.jpg"
+              src="/images/image-product-2-thumbnail.jpg"
               alt="thumbnail-images two"
               data-thumbnail="2"
               class="small"
             /><img
-              src="/ecommerce-product-page-main/images/image-product-3-thumbnail.jpg"
+              src="/images/image-product-3-thumbnail.jpg"
               alt="thumbnail-images three"
               data-thumbnail="3"
               class="small"
             /><img
-              src="/ecommerce-product-page-main/images/image-product-4-thumbnail.jpg"
+              src="/images/image-product-4-thumbnail.jpg"
               alt="thumbnail-images four"
               data-thumbnail="4"
               class="small"
