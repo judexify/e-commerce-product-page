@@ -97,6 +97,7 @@
 
   nav.show {
     left: 0;
+    z-index: 10;
   }
 
   nav.show ~ #overlay {
@@ -148,9 +149,9 @@
 
   .cart-dialog {
     z-index: 10;
-    width: auto;
-    right: 5%;
-    /* left: 5%; */
+    width: 100vw;
+    top: 8.4rem;
+    right: -25%;
   }
 
   .product-grid {
@@ -183,7 +184,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide.show {
+    pointer-events: none;
   }
 
   .slider__btn {
@@ -208,11 +212,13 @@
   .slider__btn--left {
     left: 5%;
     font-weight: 700;
+    z-index: 5;
   }
 
   .slider__btn--right {
     right: 5%;
     font-weight: 700;
+    z-index: 2;
   }
 
   .product-description {
@@ -266,8 +272,9 @@
   }
 
   .cart-dialog {
-    width: auto;
-    right: 5%;
+    width: 100vw;
+    top: 6.2rem;
+    right: -20%;
   }
 
   .mobile-view {
