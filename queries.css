@@ -22,7 +22,7 @@
   }
 
   .cart-dialog {
-    width: 35%;
+    width: auto;
     right: 3%;
   }
 
@@ -114,7 +114,7 @@
     align-self: flex-start;
   }
 
-  .link .close {
+  .link.close {
     display: none;
   }
 
@@ -147,9 +147,10 @@
   }
 
   .cart-dialog {
-    width: 90%;
+    z-index: 10;
+    width: auto;
     right: 5%;
-    left: 5%;
+    /* left: 5%; */
   }
 
   .product-grid {
@@ -265,9 +266,8 @@
   }
 
   .cart-dialog {
-    width: 95%;
-    right: 2.5%;
-    left: 2.5%;
+    width: auto;
+    right: 5%;
   }
 
   .mobile-view {
