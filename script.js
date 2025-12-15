@@ -230,8 +230,7 @@ function forModalDisplay() {
             />
           </div>
         </div>
-       <button class="slideBtn sliderBtn--left"><</button>
-        <button class="slideBtn sliderBtn--right">></button>
+      
         </div>`;
 
   modalCard.innerHTML = string;
@@ -255,13 +254,13 @@ mainImage.addEventListener("click", function (e) {
 const closeModalBtn = document.querySelector(".close-modal");
 const modalContainer = document.querySelector(".modalCardAll");
 
-console.log(modalBoxes);
-
 modalContainer.addEventListener("click", function (e) {
   const link = e.target;
   isModalOn = false;
+  modalContainer.style.opacity = 1;
+  overlay.style.display = "block";
   if (link.matches(".close-modal")) {
     overlay.style.display = "none";
-    modalBoxes.style.opacity = 0;
+    modalContainer.style.opacity = 0;
   }
 });
